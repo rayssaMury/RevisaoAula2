@@ -11,11 +11,23 @@ int calc(int numOne, inte numTwo, int calcOperador, int &aux){
     break;
     case '-':
     result = numOne - numTwo;
-     break;
+    break;
     case '*':
     result = numOne * numTwo;
     break;
     case '/':
     result = numOne / numTwo;
+    break;
+    default:
+    aux = 0 ;
+    return 0;
+    }
+    aux = 0;
+    return result;
 }
-}
+
+int main{
+	int num1, num2, ;
+	char operador;
+	cout << "Escolha o primeiro número: \n";
+	cin >> num1;
